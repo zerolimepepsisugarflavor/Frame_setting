@@ -24,6 +24,26 @@ public class FrameCounter : MonoBehaviour
         {
             isShow = !isShow;
         }
+        if (Input.GetKeyDown(KeyCode.Alpha1)) {
+            Application.targetFrameRate = 30; 
+             
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            Application.targetFrameRate = 60;
+
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            Application.targetFrameRate = 144;
+
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            Application.targetFrameRate = -1;
+
+        }
+       
     }
 
     private void OnGUI()
